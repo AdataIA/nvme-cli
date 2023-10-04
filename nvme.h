@@ -114,6 +114,8 @@ enum nvme_print_flags validate_output_format(const char *format);
 bool nvme_is_output_format_json(void);
 int __id_ctrl(int argc, char **argv, struct command *cmd,
 	struct plugin *plugin, void (*vs)(uint8_t *vs, struct json_object *root));
+int __parse_lba_num_si(struct nvme_dev *dev, const char *opt,
+			    const char *val, __u8 flbas, __u64 *num);
 
 extern int current_index;
 void *nvme_alloc_huge(size_t len, bool *huge);

@@ -3014,6 +3014,13 @@ static int parse_lba_num_si(struct nvme_dev *dev, const char *opt,
 	return 0;
 }
 
+int __parse_lba_num_si(struct nvme_dev *dev, const char *opt,
+			    const char *val, __u8 flbas, __u64 *num)
+{
+	parse_lba_num_si(dev, opt, val, flbas, num);
+	return 0;
+}
+
 static int create_ns(int argc, char **argv, struct command *cmd, struct plugin *plugin)
 {
 	const char *desc = "Send a namespace management command\n"
