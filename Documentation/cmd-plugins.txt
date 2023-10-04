@@ -201,3 +201,12 @@ linknvme:nvme-zns-zrwa-flush-zone[1]::
 
 linknvme:nvme-inspur-nvme-vendor-log[1]::
 	NVMe Inspur Device Vendor log page request
+
+linknvme:nvme-adata-get-info[1]::
+	Show chosen info of device
+
+linknvme:nvme-adata-create-ns[1]::
+	Create and attach namespace
+
+linknvme:nvme-adata-delete-ns[1]::
+	Delete and detach namespace

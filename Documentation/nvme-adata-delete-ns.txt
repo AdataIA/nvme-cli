@@ -1,0 +1,40 @@
+nvme-adata-delete-ns(1)
+=======================
+
+NAME
+----
+nvme-adata-delete-ns - Send NVMe detach and delete namespace, return result.
+
+SYNOPSIS
+--------
+[verse]
+'nvme adata delete-ns' <device> [--namespace-id=<nsid> | -n <nsid>]
+			[--controllers=<ctrl-list,> | -c <ctrl-list,>]
+
+DESCRIPTION
+-----------
+For the NVMe device given, sends the nvme namespace detach command for
+the provided namespace identifier, then delete the namespace.
+
+OPTIONS
+-------
+-n <nsid>::
+--namespace-id=<nsid>::
+	The namespace identifier to delete.
+
+-c <ctrl-list,>::
+-controllers=<ctrl-list,>::
+	The comma separated list of controller identifiers to detach
+	the namespace from.
+
+EXAMPLES
+--------
+* Detach a namespace from the controller and delete it:
++
+------------
+# nvme adata delete-ns /dev/nvme0 -n 1 -c 0x21
+------------
+
+NVME
+----
+Part of the nvme-user suite

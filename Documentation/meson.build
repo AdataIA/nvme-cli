@@ -191,6 +191,9 @@ adoc_sources = [
   'nvme-zns-zone-mgmt-recv',
   'nvme-zns-zone-mgmt-send',
   'nvme-inspur-nvme-vendor-log',
+  'nvme-adata-get-info',
+  'nvme-adata-create-ns',
+  'nvme-adata-delete-ns',
 ]
 
 adoc_includes = [
