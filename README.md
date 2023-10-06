@@ -3,6 +3,9 @@
 ![MesonBuild](https://github.com/linux-nvme/nvme-cli/actions/workflows/build.yml/badge.svg)
 ![GitHub](https://img.shields.io/github/license/linux-nvme/nvme-cli)
 
+This project is forked from https://github.com/linux-nvme/nvme-cli.
+For adata plugin usage, please install json-c library before building project.
+
 NVM-Express user space tooling for Linux.
 
 ## Build from source
